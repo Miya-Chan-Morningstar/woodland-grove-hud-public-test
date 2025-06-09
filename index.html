@@ -1,89 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Woodland Grove Staff</title>
+  <meta charset="UTF-8">
+  <title>Woodland Grove Staff Directory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: sans-serif;
+      background: #f4f4f4;
       margin: 0;
-      background: #f2f2f2;
-      color: #333;
+      padding: 0;
     }
-
     header {
-      background: #4b6e4b;
+      background-color: #2d4d2d;
       color: white;
-      padding: 1em;
+      padding: 1rem;
       text-align: center;
     }
-
-    .staff-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1em;
-      padding: 1em;
-    }
-
-    .card {
+    .staff-card {
       background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 0.5em;
+      max-width: 300px;
+      margin: 1rem auto;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
       text-align: center;
     }
-
-    .avatar {
+    .staff-card img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.5rem;
     }
-
-    .status {
-      font-size: 0.9em;
-      font-weight: bold;
-      color: green;
+    .button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      margin-top: 1rem;
+      background: #4b6e4b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
     }
-
-    .offline {
-      color: #888;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.8em;
-      padding: 1em;
-      color: #999;
+    .button:hover {
+      background: #3a563a;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Woodland Grove Staff Directory</h1>
-  </header>
 
-  <section class="staff-grid">
-    <div class="card">
-      <img src="https://via.placeholder.com/100" alt="Jane Doe" class="avatar" />
-      <div><strong>Jane Doe</strong></div>
-      <div>Manager</div>
-      <div class="status">Online</div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/100" alt="John Smith" class="avatar" />
-      <div><strong>John Smith</strong></div>
-      <div>Security</div>
-      <div class="status offline">Offline</div>
-    </div>
-    <!-- Add more staff cards here -->
-  </section>
+<header>
+  <h1>Woodland Grove Staff Directory</h1>
+</header>
 
-  <footer>
-    © Woodland Grove, 2025
-  </footer>
+<!-- Staff Card for Miya-Chan -->
+<div class="staff-card">
+  <img src="https://via.placeholder.com/100" alt="Miya-Chan Morningstar">
+  <h2>Miya-Chan Morningstar</h2>
+  <p><strong>Judge</strong></p>
+  <button class="button" onclick="alert('SL Name: miyachan starchild\nPosition: Judge\nAvailable Hours: Mon–Fri 2pm–8pm SLT\nMain Office: Courthouse, 2nd Floor\nSLURL: https://maps.secondlife.com/secondlife/Woodland%20Grove/128/128/23')">
+    View Details
+  </button>
+</div>
+
 </body>
 </html>
-
