@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Woodland Grove Staff</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #4b6e4b;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .staff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1em;
+      padding: 1em;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.5em;
+    }
+
+    .status {
+      font-size: 0.9em;
+      font-weight: bold;
+      color: green;
+    }
+
+    .offline {
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      padding: 1em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Woodland Grove Staff Directory</h1>
+  </header>
+
+  <section class="staff-grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="Jane Doe" class="avatar" />
+      <div><strong>Jane Doe</strong></div>
+      <div>Manager</div>
+      <div class="status">Online</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="John Smith" class="avatar" />
+      <div><strong>John Smith</strong></div>
+      <div>Security</div>
+      <div class="status offline">Offline</div>
+    </div>
+    <!-- Add more staff cards here -->
+  </section>
+
+  <footer>
+    © Woodland Grove, 2025
+  </footer>
+</body>
+</html>
 
